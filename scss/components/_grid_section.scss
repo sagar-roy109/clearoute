@@ -1,0 +1,48 @@
+.grid-area{
+	padding-top: 140px;
+	padding-bottom: 34px;
+	.sub-title{
+		@include sub_header_style;
+	}
+
+	.title{
+		@include header_style(36px, 1.5em);
+		margin-top: 10px;
+		margin-bottom: 18px;
+	}
+
+	.content{
+		@include paragraph_style(16px);
+		margin-bottom: 36px;
+	}
+
+	.list{
+		font-family: "Inter", sans-serif;
+		font-size: 18px;
+		font-weight: 500;
+		line-height: 18px;
+		list-style: none;
+
+		li{
+			padding-bottom: 16px;
+			position: relative;
+
+			&::before{
+				content: url('../assets/icons/list.svg');
+				position: absolute;
+				top: 0;
+				left: -30px;
+			}
+		}
+	}
+
+	.item{
+		width: 48%;
+	}
+
+	.d-image{
+		img:nth-child(1){
+			margin-bottom: 24px;
+		}
+	}
+}

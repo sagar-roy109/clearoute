@@ -1,0 +1,126 @@
+.notebook_header_container {
+	border-bottom: 1px solid #e3eefe;
+	padding: 22px 0;
+
+	.navbar-nav {
+		gap: 9px;
+		li {
+			&:hover {
+				& > ul.dropdown-menu {
+					display: block;
+				}
+
+				.dropdown-toggle {
+					&::after {
+						transform: rotate(180deg);
+						-webkit-transform: rotate(180deg);
+						-moz-transform: rotate(180deg);
+						-ms-transform: rotate(180deg);
+						-o-transform: rotate(180deg);
+					}
+				}
+			}
+		}
+
+		.active {
+			.nav-link {
+				color: #2b2b39;
+				font-weight: 600;
+			}
+		}
+
+		.dropdown-submenu {
+			position: relative;
+
+			& > {
+				.dropdown-menu {
+					top: 0;
+					left: 100%;
+					margin-top: -6px;
+				}
+			}
+
+			.dropdown-toggle {
+				&::after {
+					transition: 0.2s;
+					content: url("../assets/icons/Vector.svg");
+					margin-left: 3px;
+					border: none;
+					margin: 0;
+					vertical-align: initial;
+					transform: rotate(90deg);
+					-webkit-transition: 0.2s;
+					-moz-transition: 0.2s;
+					-ms-transition: 0.2s;
+					-o-transition: 0.2s;
+					-webkit-transform: rotate(90deg);
+					-moz-transform: rotate(90deg);
+					-ms-transform: rotate(90deg);
+					-o-transform: rotate(90deg);
+				}
+			}
+		}
+
+		.nav-link {
+			font-family: "Inter", sans-serif;
+			font-size: 14px;
+			font-weight: 400;
+			color: $paragraph_color;
+
+			&:hover {
+				color: #2b2b39;
+				font-weight: 600;
+			}
+		}
+
+		.dropdown-toggle {
+			&::after {
+				transition: 0.4s;
+				content: url("../assets/icons/Vector.svg");
+				border: none;
+				margin: 0;
+				vertical-align: initial;
+				transform: rotate(0deg);
+				-webkit-transition: 0.4s;
+				-moz-transition: 0.4s;
+				-ms-transition: 0.4s;
+				-o-transition: 0.4s;
+				-webkit-transform: rotate(0deg);
+				-moz-transform: rotate(0deg);
+				-ms-transform: rotate(0deg);
+				-o-transform: rotate(0deg);
+			}
+		}
+	}
+
+	.notebook-search-area {
+		width: 120px;
+		margin-right: 42px;
+		svg {
+			position: absolute;
+			top: 22px;
+			left: 0px;
+		}
+
+		input[type="search"] {
+			padding: 18px 0 18px 25px;
+			border: none;
+			border-bottom: 1px solid #e5e5e5;
+			width: 100%;
+		}
+		.search-form-group {
+			position: relative;
+		}
+
+		font-family: "Inter", sans-serif;
+		font-size: 12px;
+		color: #686868;
+	}
+	.notebook_button {
+		@include button_style;
+
+		&:hover {
+			@include button_hover;
+		}
+	}
+}

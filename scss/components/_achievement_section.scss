@@ -1,0 +1,139 @@
+.achievement-area{
+
+	padding: 75px 0;
+	margin-top: 40px;
+
+	.content-area{
+		padding-left: 25px;
+	}
+	.card-item{
+		padding: 46px;
+		padding-bottom: 30px;
+		border: 1px solid #eeee;
+		width: 48%;
+		border-radius: 14px;
+		-webkit-border-radius: 14px;
+		-moz-border-radius: 14px;
+		-ms-border-radius: 14px;
+		-o-border-radius: 14px;
+		transition: 0.3s linear;
+		-webkit-transition: 0.3s linear;
+		-moz-transition: 0.3s linear;
+		-ms-transition: 0.3s linear;
+		-o-transition: 0.3s linear;
+
+		&:hover{
+			box-shadow: 3px 7px 23px 10px #f0f0f0;
+		}
+
+		.title	{
+			font-family: "Inter", sans-serif;
+			font-size: 20px;
+			font-weight: 500;
+			line-height: 1em;
+			display: flex;
+			align-items: center;
+			margin-bottom: 36px;
+
+			.icon{
+				margin-right: 10px;
+			}
+
+		}
+
+		.rank-details{
+			margin-bottom: 40px;
+			img{
+				margin-right: 16px;
+			}
+			.rank-content{
+
+				font-family: "Inter", sans-serif;
+				font-size: 16px;
+				font-weight: 600;
+				line-height: 1.2em;
+				letter-spacing: -0.02em;
+				color: $paragraph_color;
+				margin: 0;
+
+				.highlight{
+					color: $primary_color;
+				}
+
+			}
+		}
+
+		.content{
+				margin: 0;
+				font-family: "Inter", sans-serif;
+				font-size: 16px;
+				font-weight: 400;
+				line-height: 1.7em;
+				color: #8C8C8C;
+				margin-bottom: 40px;
+		}
+		.cta{
+				font-family: "Inter", sans-serif;
+				font-size: 16px;
+				font-weight: 500;
+				line-height: 16px;
+				color: #4A4A56;
+				text-decoration: none;
+				transition:0.3s ease-in ;
+				-webkit-transition:0.3s ease-in ;
+				-moz-transition:0.3s ease-in ;
+				-ms-transition:0.3s ease-in ;
+				-o-transition:0.3s ease-in ;
+				.cta-icon{
+					margin-left: 8px;
+				}
+				path{
+					transition:0.3s ease-in ;
+					-webkit-transition:0.3s ease-in ;
+					-moz-transition:0.3s ease-in ;
+					-ms-transition:0.3s ease-in ;
+					-o-transition:0.3s ease-in ;
+					stroke: #4A4A56;
+				}
+				&:hover{
+					color: $primary_color;
+					.cta-icon{
+						path{
+							stroke: $primary_color;
+						}
+					}
+				}
+
+		}
+	}
+
+	.sub-title{
+		@include sub_header_style;
+		margin-bottom: 10px;
+		display: block
+	}
+
+	.title{
+		@include header_style(34px, 1.5em);
+		margin-bottom: 18px;
+	}
+
+	.content-details{
+		@include paragraph_style(16px);
+		margin-bottom: 38px;
+	}
+
+	.ach-cta{
+		@include button_style;
+		.icon{
+			margin-left: 19px;
+		}
+		path{
+			stroke: #ffff;
+		}
+
+		&:hover{
+			@include button_hover;
+		}
+	}
+}

@@ -1,0 +1,29 @@
+@import 'global.scss';
+
+/** Header area starts **/
+@import 'components/_header';
+/** Header area ends **/
+
+/** hero section start **/
+@import 'components/hero_section';
+/** hero section ends**/
+
+/** grid section starts **/
+@import 'components/grid_section';
+/** grid section ends **/
+
+/** achievement section starts **/
+@import 'components/achievement_section';
+/** achievement section ends **/
+
+
+/** team section starts **/
+@import 'components/team_section';
+/** team section ends**/
+
+/**footer starts **/
+@import 'components/_footer';
+/*** Footer ends **/
+
+/** responsive CSS **/
+@import 'components/_responsive';
